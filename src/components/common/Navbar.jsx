@@ -6,7 +6,7 @@ import {
   SidebarOpenIcon,
   SiderbarCloseIcon,
 } from "../home-page/Icon";
-import { NavLinks } from "./Helper";
+import { navLinks, NavLinks } from "./Helper";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -60,7 +60,7 @@ const Navbar = () => {
 
           {/* Desktop NavLinks */}
           <div className="text-white flex gap-[46px] text-base font-bold leading-[93px] max-xl:hidden">
-            {NavLinks.map((link, index) => (
+            {navLinks.map((link, index) => (
               <span
                 key={index}
                 className="hover:font-black h-fit"
@@ -96,7 +96,7 @@ const Navbar = () => {
 
           {/* Sidebar Links */}
           <div className="text-white flex flex-col gap-[46px] text-2xl font-bold leading-[93px] items-center px-3 max-xl:gap-0 max-xl:leading-[70px] max-[320px]:leading-[55px] max-[320px]:text-[16px]">
-            {NavLinks.map((link, index) => (
+            {navLinks.map((link, index) => (
               <span
                 key={index}
                 className="hover:font-black h-fit"

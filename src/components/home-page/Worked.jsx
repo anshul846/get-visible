@@ -1,4 +1,5 @@
 import React from "react";
+import { logosRow1, logosRow2 } from "../common/Helper";
 
 const Worked = () => {
   return (
@@ -7,50 +8,28 @@ const Worked = () => {
         <span className="text-[#003465] text-center text-[80px] font-black leading-[74px] uppercase max-[1440px]:text-[65px] max-xl:text-[45px] max-lg:text-[40px] max-md:text-[30px] max-[425px]:text-[26px] max-[425px]:leading-[35px]">
           people we have worked with
         </span>
+
         <div className="flex flex-col gap-[60px]">
-          <div className="flex gap-[57px] max-[425px]:gap-[20px]">
-            <span>
-              <a href="#">
-                <img src="./assets/img/image 6.png" alt="img6" />
-              </a>
-            </span>
-            <span>
-              <a href="#">
-                <img src="./assets/img/image 15.png" alt="img15" />
-              </a>
-            </span>
-            <span>
-              <a href="#">
-                <img src="./assets/img/image 8 (3).png" alt="img8" />
-              </a>
-            </span>
-            <span>
-              <a href="#">
-                <img src="./assets/img/image 13.png" alt="img13" />
-              </a>
-            </span>
+          {/* Row 1 */}
+          <div className="flex gap-[57px] max-[425px]:gap-[20px] max-2xl:flex-wrap  justify-center">
+            {logosRow1.map((logo, i) => (
+              <span key={i}>
+                <a href="#">
+                  <img src={logo.src} alt={logo.alt} />
+                </a>
+              </span>
+            ))}
           </div>
-          <div className="flex gap-24 items-center max-[425px]:gap-[30px]">
-            <span>
-              <a href="#">
-                <img src="./assets/img/image 9 (1).png" alt="img9" />
-              </a>
-            </span>
-            <span>
-              <a href="#">
-                <img src="./assets/img/image 12.png" alt="img12" />
-              </a>
-            </span>
-            <span>
-              <a href="#">
-                <img src="./assets/img/image 11.png" alt="img11" />
-              </a>
-            </span>
-            <span>
-              <a href="#">
-                <img src="./assets/img/image 14.png" alt="img14" />
-              </a>
-            </span>
+
+          {/* Row 2 */}
+          <div className="flex gap-24 items-center max-[425px]:gap-[30px] flex-wrap justify-center">
+            {logosRow2.map((logo, i) => (
+              <span key={i}>
+                <a href="#">
+                  <img src={logo.src} alt={logo.alt} />
+                </a>
+              </span>
+            ))}
           </div>
         </div>
       </article>
