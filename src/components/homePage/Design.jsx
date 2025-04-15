@@ -14,7 +14,7 @@ const Card = ({
     <span className="text-[#003465] break-words max-w-[530px] w-full text-[80px] font-black leading-[74px] uppercase max-2xl:text-[72px] max-[1440px]:text-[62px] max-xl:text-[58px] max-md:text-[33px] max-sm:text-[27px] max-[320px]:leading-[20px] max-[320px]:text-[20px]">
       {title}
     </span>
-    <div className="flex gap-[51px] max-[425px]:gap-[20px] max-[425px]:flex-col items-center">
+    <div className="flex mt-[20px] gap-[51px] max-[425px]:gap-[20px] max-[425px]:flex-col items-center">
       <span>
         <img className={`w-full ${imgClassName}`} src={image} alt={title} />
       </span>
@@ -22,7 +22,7 @@ const Card = ({
         className={`flex justify-between text-[17px] font-semibold leading-[27px] flex-col w-full ${contentClassName}`}
       >
         {text}
-        <span className="group w-[68px] h-[68px] cursor-pointer hover:bg-[#003465] bg-[#F9DD00] rounded-[50%] p-[10px] flex justify-center items-center max-lg:w-[50px] max-lg:h-[50px] max-md:w-[35px] max-md:h-[35px]">
+        <span className="group w-[68px] h-[68px] cursor-pointer mt-[50px] hover:bg-[#003465] bg-[#F9DD00] rounded-[50%] p-[10px] flex justify-center items-center max-lg:w-[50px] max-lg:h-[50px] max-md:w-[35px] max-md:h-[35px]">
           <svg
             className="max-lg:w-[20px]"
             width="26"

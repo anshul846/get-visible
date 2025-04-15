@@ -4,7 +4,7 @@ import {
   FooterInstagramIcon,
   FooterMailIcon,
   FooterPinterstIcon,
-} from "../home-page/Icon";
+} from "../homePage/Icon";
 
 export const navLinks = [
   { label: "Agency", href: "#" },
