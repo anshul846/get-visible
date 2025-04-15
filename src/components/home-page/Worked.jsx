@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { logosRow1, logosRow2 } from "../common/Helper";
 

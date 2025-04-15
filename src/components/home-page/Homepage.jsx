@@ -18,7 +18,7 @@ const Homepage = () => {
       <Design />
 
       {/* <!-- section 3 will start from here --> */}
-      {/* <Proud /> */}
+      <Proud />
       {/* <!-- section 4 will start from here  --> */}
       <Worked />
       {/* <!-- section 6 will start from here --> */}

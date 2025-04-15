@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { designpageleftCards, designpagerightCards } from "../common/Helper";
 

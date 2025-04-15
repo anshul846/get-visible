@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import React, { createContext } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
