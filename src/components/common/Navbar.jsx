@@ -5,8 +5,9 @@ import {
   NavbarBtnIcon,
   SidebarOpenIcon,
   SiderbarCloseIcon,
-} from "../home-page/Icon";
-import { NavLinks } from "./Helper";
+} from "../homePage/Icon";
+import { navLinks, NavLinks } from "./Helper";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -50,7 +51,7 @@ const Navbar = () => {
   }, [isSidebarOpen]);
 
   return (
-    <nav className="w-full bg-[#003465]">
+    <nav className="w-full bg-[#003465] pb-[113px]">
       <div className="max-w-[1920px] w-full px-4 relative">
         {/* Top Navbar */}
         <div className="max-w-[1492px] w-full flex justify-between mx-auto h-[93px] items-center max-sm:items-start">
@@ -60,18 +61,18 @@ const Navbar = () => {
 
           {/* Desktop NavLinks */}
           <div className="text-white flex gap-[46px] text-base font-bold leading-[93px] max-xl:hidden">
-            {NavLinks.map((link, index) => (
+            {navLinks.map((link, index) => (
               <span
                 key={index}
                 className="hover:font-black h-fit"
                 style={{ width: "max-content" }}
               >
-                <a href={link.href}>{link.label}</a>
+                <Link href={link.href}>{link.label}</Link>
               </span>
             ))}
             <button className="group bg-[#F9DD00] flex h-[50px] justify-center items-center gap-[10px] rounded-xl w-[215px] self-center transition-all cursor-pointer text-[#003465] text-center text-base font-bold leading-[93px] relative z-10 hover:bg-[#003465] hover:text-[#F9DD00] hover:outline-double">
               <NavbarBtnIcon />
-              Start Project
+              Start Projects
             </button>
           </div>
 
@@ -96,13 +97,13 @@ const Navbar = () => {
 
           {/* Sidebar Links */}
           <div className="text-white flex flex-col gap-[46px] text-2xl font-bold leading-[93px] items-center px-3 max-xl:gap-0 max-xl:leading-[70px] max-[320px]:leading-[55px] max-[320px]:text-[16px]">
-            {NavLinks.map((link, index) => (
+            {navLinks.map((link, index) => (
               <span
                 key={index}
                 className="hover:font-black h-fit"
                 onClick={closeSidebar}
               >
-                <a href={link.href}>{link.label}</a>
+                <Link href={link.href}>{link.label}</Link>
               </span>
             ))}
 
