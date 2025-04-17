@@ -1,7 +1,6 @@
 @import "tailwindcss";
-
+@import "swiper/css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-/* font-family-start */
 .font-Montserrat {
   font-family: "Montserrat", sans-serif;
 }
@@ -24,7 +23,7 @@
   --text-light-yellow: #f9dd00;
 }
 
-/* font-family-end */
+/* font-family-end */ 
 
 .text-xs {
   font-size: var(--font-xs);
