@@ -72,7 +72,7 @@ const Navbar = () => {
             ))}
             <button className="group bg-[#F9DD00] flex h-[50px] justify-center items-center gap-[10px] rounded-xl w-[215px] self-center transition-all cursor-pointer text-[#003465] text-center text-base font-bold leading-[93px] relative z-10 hover:bg-[#003465] hover:text-[#F9DD00] hover:outline-double">
               <NavbarBtnIcon />
-              Start Project
+              Start Projects
             </button>
           </div>
 
