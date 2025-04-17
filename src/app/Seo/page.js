@@ -1,16 +1,21 @@
 import Footer from "@/components/common/Footer";
 import Navbar from "@/components/common/Navbar";
-import Digital_marketing from "@/components/Seo/Digital_marketing";
+import Getfree from "@/components/getfree/Getfree";
+import Digitalmarketing from "@/components/Seo/Digitalmarketing";
+
+import Searchengine from "@/components/Seo/Searchengine";
 import SeoSteps from "@/components/Seo/SeoSteps";
 import React from "react";
 
 const page = () => {
   return (
     <div>
-      {/* <Navbar /> */}
-      {/* <Digital_marketing />
-      <Footer /> */}
-      <SeoSteps/>
+      <Navbar />
+      <Searchengine/>
+     <Digitalmarketing/>
+       {/* <Getfree/> */}
+      <Footer />
+      {/* <SeoSteps/> */}
     </div>
   );
 };
