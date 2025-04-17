@@ -2,12 +2,16 @@ import React from "react";
 import Image from "next/image";
 import { howsection } from "../common/Helper";
 import Aboutmain from "./Aboutmain";
+import Navbar from "../common/Navbar";
+import Footer from "../common/Footer";
 
 const About = () => {
   return (
     <div>
-      <Aboutmain heading="aboutus" />
-      <div className=" bg-[#003465]  w-full relative  p-[30px] sm:p-[50px] md:p-[70px] lg:pb-[100px]">
+      <Navbar />
+
+      {/* <Aboutmain heading="aboutus" /> */}
+      <div className=" bg-[#003465]   w-full relative  p-[30px] sm:p-[50px] md:p-[70px] lg:pb-[100px]">
         <Image
           src="/images/svg/line.svg"
           width={1820}
@@ -139,6 +143,7 @@ const About = () => {
         </div>
       </div>
       {/* We are always on section end */}
+      <Footer />
     </div>
   );
 };

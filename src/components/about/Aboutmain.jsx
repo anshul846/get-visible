@@ -4,7 +4,7 @@ import Image from "next/image";
 const Aboutmain = ({ heading }) => {
   return (
     <div>
-      <div className="bg-[url(/images/png/about-bg.png)] w-full bg-center bg-cover bg-no-repeat h-full bg-[#003465]">
+      <div className="bg-[url(/images/png/about-bg.png)] w-full bg-center bg-cover bg-no-repeat h-full bg-[#003465] pt-[147px]">
         <div className="max-w-[1505px] w-full mx-auto px-4 h-[1150px]">
           <h1 className="text-[#03498A] font-Montserrat text-[274px]  font-black uppercase text-center leading-[93%] relative z-30">
             {heading}
