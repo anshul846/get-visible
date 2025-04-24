@@ -86,8 +86,8 @@ const Navbar = () => {
         <div
           ref={sidebarRef}
           id="sidebar"
-          className={`fixed top-0 bg-[#003465] max-w-[800px] w-full h-screen outline outline-[#F9DD00] z-50 overflow-auto transition-all duration-500 ease-in-out xl:hidden ${
-            isSidebarOpen ? "left-0" : "-left-[100%]"
+          className={`fixed top-0 bg-[#003465]  w-full h-screen outline outline-[#F9DD00] z-50 overflow-auto transition-all duration-500 ease-in-out xl:hidden ${
+            isSidebarOpen ? "left-0" :"-left-[100%]"
           }`}
         >
           {/* Close Button */}
@@ -96,7 +96,7 @@ const Navbar = () => {
           </span>
 
           {/* Sidebar Links */}
-          <div className="text-white flex flex-col gap-[46px] text-2xl font-bold leading-[93px] items-center px-3 max-xl:gap-0 max-xl:leading-[70px] max-[320px]:leading-[55px] max-[320px]:text-[16px]">
+          <div className="text-white flex flex-col gap-[46px] text-[18px] font-bold leading-[93px] items-center px-3 max-xl:gap-0 max-xl:leading-[70px] max-[320px]:leading-[55px] max-[320px]:text-[16px]">
             {navLinks.map((link, index) => (
               <span
                 key={index}
@@ -109,7 +109,7 @@ const Navbar = () => {
 
             <button
               onClick={closeSidebar}
-              className="group bg-[#F9DD00] flex h-[50px] justify-center items-center gap-[10px] rounded-xl w-full self-center transition-all cursor-pointer text-[#003465] text-center text-xl font-bold leading-[93px] relative z-10 hover:bg-[#003465] hover:text-[#F9DD00] hover:outline-double max-[320px]:h-[40px] max-[320px]:text-[17px]"
+              className="group bg-[#F9DD00] flex h-[50px] justify-center items-center gap-[10px] rounded-xl w-[250px] self-center transition-all cursor-pointer text-[#003465] text-center text-xl font-bold leading-[93px] relative z-10 hover:bg-[#003465] hover:text-[#F9DD00] hover:outline-double max-[320px]:h-[40px] max-[320px]:text-[17px]"
             >
               <NavbarBtnIcon />
               Start Project

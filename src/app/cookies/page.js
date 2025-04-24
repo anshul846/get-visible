@@ -9,8 +9,7 @@ const page = () => {
     <div>
       <Navbar/>
       <Cookies />
-      <Footer/>npm
-  
+      <Footer/>
     </div>
   );
 }

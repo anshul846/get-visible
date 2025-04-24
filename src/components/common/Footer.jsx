@@ -7,8 +7,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="px-4">
-      <section className="flex items-center justify-between max-w-[1726px] w-full mx-auto max-[992px]:flex-col max-[992px]:gap-[50px]">
+    <footer className="px-4 pt-[90px]">
+      <section className="flex items-center  justify-between max-w-[1726px] w-full mx-auto max-[992px]:flex-col max-[992px]:gap-[50px]">
         <div className="flex justify-center">
           <Image
             width={380}
